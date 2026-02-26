@@ -1,0 +1,100 @@
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+    self.cron_thread(i)
+  File "/usr/lib/python3/dist-packages/odoo/service/server.py", line 523, in cron_thread
+    _run_cron(cr)
+  File "/usr/lib/python3/dist-packages/odoo/service/server.py", line 507, in _run_cron
+    pg_conn.poll()
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2026-02-26 13:29:26,141 1 INFO odoo_prod odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 2 connections  
+=== Entrypoint Personalizado - Odoo ===
+✓ Admin password cargada (4 caracteres)
+✓ DB password cargada (4 caracteres)
+Configuración detectada:
+  Host: postgres
+  Puerto: 5432
+  Base de datos: odoo_prod
+  Usuario: odoo_prod
+=== Esperando PostgreSQL ===
+✓ PostgreSQL listo
+=== Verificando estado de la BD ===
+✓ Base de datos ya inicializada (528 tablas)
+=== Iniciando Odoo ===
+2026-02-26 13:29:28,951 1 INFO ? odoo: Odoo version 18.0-20251121 
+2026-02-26 13:29:28,952 1 INFO ? odoo: Using configuration file at /tmp/odoo.conf 
+2026-02-26 13:29:28,952 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2026-02-26 13:29:28,952 1 INFO ? odoo: database: odoo_prod@postgres:5432 
+Warn: Can't find .pfb for face 'Courier'
+2026-02-26 13:29:29,145 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2026-02-26 13:29:29,161 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2026-02-26 13:29:29,380 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on ff950717dcea:8069 
+2026-02-26 13:29:29,417 1 INFO odoo_prod odoo.modules.loading: loading 1 modules... 
+2026-02-26 13:29:29,425 1 INFO odoo_prod odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2026-02-26 13:29:29,458 1 INFO odoo_prod odoo.modules.loading: loading 73 modules... 
+2026-02-26 13:29:30,284 1 INFO odoo_prod odoo.modules.loading: 73 modules loaded in 0.83s, 0 queries (+0 extra) 
+2026-02-26 13:29:30,477 1 INFO odoo_prod odoo.modules.loading: Modules loaded. 
+2026-02-26 13:29:30,483 1 INFO odoo_prod odoo.modules.registry: Registry loaded in 1.102s 
+2026-02-26 13:30:13,122 1 INFO odoo_prod odoo.addons.base.models.ir_http: Generating routing map for key None 
+2026-02-26 13:30:13,182 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:13] "GET / HTTP/1.1" 303 - 5 0.009 0.055
+2026-02-26 13:30:13,192 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:13] "GET /odoo HTTP/1.1" 303 - 1 0.001 0.005
+2026-02-26 13:30:13,622 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:13] "GET /web/login?redirect=/odoo? HTTP/1.1" 200 - 60 0.062 0.362
+2026-02-26 13:30:15,011 1 INFO ? werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:15] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 1.375
+2026-02-26 13:30:15,031 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:15] "GET /web/binary/company_logo HTTP/1.1" 200 - 2 0.005 1.389
+2026-02-26 13:30:15,041 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:15] "GET /web/assets/f34462b/web.assets_frontend.min.css HTTP/1.1" 200 - 4 0.014 1.394
+2026-02-26 13:30:15,051 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:15] "GET /web/assets/944fe34/web.assets_frontend_minimal.min.js HTTP/1.1" 200 - 4 0.003 0.005
+2026-02-26 13:30:15,101 1 INFO ? werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:15] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.003
+2026-02-26 13:30:15,108 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:15] "GET /web/assets/87d6052/web.assets_frontend_lazy.min.js HTTP/1.1" 200 - 4 0.008 0.008
+2026-02-26 13:30:15,217 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:15] "GET /website/translations/6b61ccbdc22eee0918adeca6299246480db869a2 HTTP/1.1" 200 - 6 0.007 0.018
+2026-02-26 13:30:20,382 1 INFO odoo_prod odoo.addons.base.models.res_users: Login successful for db:odoo_prod login:admin from 192.168.1.89 
+2026-02-26 13:30:20,403 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:20] "POST /web/login HTTP/1.1" 303 - 35 0.054 0.617
+2026-02-26 13:30:20,411 1 INFO odoo_prod odoo.addons.base.models.res_device: User 2 inserts device log (OfQduTwWh08dM_J6zaHuDWMN-GmhQOugAVdVOTUP1Z) 
+2026-02-26 13:30:21,715 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:21] "GET /odoo HTTP/1.1" 200 - 93 0.112 1.196
+2026-02-26 13:30:21,778 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:21] "GET /web/assets/cc73a72/web.assets_web.min.js HTTP/1.1" 200 - 3 0.008 0.043
+2026-02-26 13:30:21,779 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:21] "GET /web/assets/005fc5c/web.assets_web.min.css HTTP/1.1" 200 - 3 0.008 0.045
+2026-02-26 13:30:21,816 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:21] "GET /web/webclient/translations/966761242cdc71078717887b87f45ea55c6b6d9c?lang=es_ES HTTP/1.1" 200 - 1 0.003 0.074
+2026-02-26 13:30:21,858 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:21] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.043 0.074
+2026-02-26 13:30:21,944 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:21] "GET /web/assets/f3a9269/web.assets_web_print.min.css HTTP/1.1" 200 - 3 0.004 0.007
+2026-02-26 13:30:22,044 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:22] "GET /web/webclient/load_menus/60e7b8bd4f8c5dc033bdd801a609aed610136dec995fd2c5f631252d909e4b6b HTTP/1.1" 200 - 96 0.162 0.149
+2026-02-26 13:30:22,133 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:22] "GET /bus/websocket_worker_bundle?v=18.0-7 HTTP/1.1" 200 - 4 0.007 0.011
+2026-02-26 13:30:22,222 1 INFO ? werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:22] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.004
+2026-02-26 13:30:22,266 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:22] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 8 0.028 0.027
+2026-02-26 13:30:22,269 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:22] "POST /web/action/load HTTP/1.1" 200 - 6 0.044 0.016
+2026-02-26 13:30:22,271 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:22] "GET /websocket?version=18.0-7 HTTP/1.1" 101 - 1 0.011 0.019
+2026-02-26 13:30:22,300 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:22] "GET /web/image/res.partner/3/avatar_128?unique=1772111083000 HTTP/1.1" 200 - 7 0.035 0.050
+2026-02-26 13:30:22,361 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:22] "POST /mail/data HTTP/1.1" 200 - 33 0.086 0.044
+2026-02-26 13:30:22,425 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:22] "POST /mail/data HTTP/1.1" 200 - 40 0.064 0.028
+2026-02-26 13:30:22,510 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:22] "POST /mail/inbox/messages HTTP/1.1" 200 - 5 0.015 0.020
+2026-02-26 13:30:22,522 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:22] "GET /web/image/res.partner/2/avatar_128?unique=1772111083000 HTTP/1.1" 200 - 7 0.019 0.017
+2026-02-26 13:30:22,530 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:22] "GET /web/image/discuss.channel/1/avatar_128?unique=8ec440f6881f1ac0004e3ffb75fcc5d475e36a5a64c9fed513f3652551a90f130906a75ae6ba6ff9bf05647c7b96ec2497060543d4dd037f68004befa187d2f9 HTTP/1.1" 200 - 9 0.021 0.026
+2026-02-26 13:30:22,534 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:22] "GET /web/image/discuss.channel/2/avatar_128?unique=8a08cdd6ced8a8aa36fc969fdcc07a57bad0cd1845f5651ec83cba0e3070d2b9411a1d3ed49f4db18ad2bd5fc48b3a9e25f4584fc8e8c1c30824984e2158f3e8 HTTP/1.1" 200 - 9 0.031 0.021
+2026-02-26 13:30:22,595 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2026-02-26 13:30:28,147 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:28] "POST /web/action/load HTTP/1.1" 200 - 9 0.012 0.008
+2026-02-26 13:30:28,924 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:28] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 425 0.296 0.424
+2026-02-26 13:30:29,170 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:29] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 167 0.140 0.079
+2026-02-26 13:30:29,291 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:29] "POST /base_setup/demo_active HTTP/1.1" 200 - 2 0.003 0.005
+2026-02-26 13:30:29,310 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:29] "POST /base_setup/data HTTP/1.1" 200 - 6 0.007 0.006
+2026-02-26 13:30:29,341 1 INFO ? werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:29] "GET /base/static/description/settings.png HTTP/1.1" 200 - 0 0.000 0.002
+2026-02-26 13:30:29,344 1 INFO ? werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:29] "GET /crm/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2026-02-26 13:30:29,354 1 INFO ? werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:29] "GET /sale_management/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.008
+2026-02-26 13:30:29,362 1 INFO ? werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:29] "GET /purchase/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.007
+2026-02-26 13:30:29,365 1 INFO ? werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:29] "GET /calendar/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.015
+2026-02-26 13:30:29,375 1 INFO ? werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:29] "GET /account/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2026-02-26 13:30:29,376 1 INFO ? werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:29] "GET /stock/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.009
+2026-02-26 13:30:29,387 1 INFO ? werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:29] "GET /web/static/img/mobile_app_qrcode_android.svg HTTP/1.1" 200 - 0 0.000 0.004
+2026-02-26 13:30:29,395 1 INFO ? werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:29] "GET /web/static/img/mobile_app_qrcode_ios.svg HTTP/1.1" 200 - 0 0.000 0.002
+2026-02-26 13:30:39,109 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:39] "GET /odoo/settings?debug=1 HTTP/1.1" 200 - 37 0.044 0.052
+2026-02-26 13:30:39,271 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:39] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.022 0.011
+2026-02-26 13:30:39,280 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:39] "GET /bus/websocket_worker_bundle?v=18.0-7 HTTP/1.1" 304 - 3 0.009 0.020
+2026-02-26 13:30:39,310 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:39] "GET /websocket?version=18.0-7 HTTP/1.1" 101 - 1 0.002 0.012
+2026-02-26 13:30:39,338 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:39] "POST /mail/data HTTP/1.1" 200 - 19 0.046 0.028
+2026-02-26 13:30:39,435 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:39] "GET /web/webclient/load_menus/3dabc53bbc7a1e4f8a064026ea3a719e7e7f44e56371947a0a8bf46cacd44011 HTTP/1.1" 200 - 190 0.212 0.100
+2026-02-26 13:30:39,513 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:39] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.012 0.012
+2026-02-26 13:30:39,524 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:39] "POST /web/action/load HTTP/1.1" 200 - 10 0.016 0.015
+2026-02-26 13:30:39,873 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:39] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 265 0.194 0.138
+2026-02-26 13:30:39,949 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:39] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 39 0.024 0.032
+2026-02-26 13:30:40,044 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:40] "POST /base_setup/demo_active HTTP/1.1" 200 - 2 0.004 0.005
+2026-02-26 13:30:40,062 1 INFO odoo_prod werkzeug: 192.168.1.89 - - [26/Feb/2026 13:30:40] "POST /base_setup/data HTTP/1.1" 200 - 5 0.006 0.007
