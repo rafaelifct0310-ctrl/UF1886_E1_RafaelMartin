@@ -42,7 +42,7 @@ contenido __manifest__.py
 }
 
 ```
-## 1) Validación XML
+## 2) Validación XML
 
 __Objetivo:__ comprobar que el XML referenciado en el manifest está bien formado.
 
@@ -50,7 +50,7 @@ __Archivo referenciado:__
 
 - views/sale_report.xml
   
-### 1.1 Verificar la existencia del archivo
+### 2.1 Verificar la existencia del archivo
 
 __Comando ejecutado:__
 
@@ -64,7 +64,7 @@ __Salida obtenida:__
 
 ```
 
-### 1.2 Validación archivo XML (bien formado)
+### 2.2 Validación archivo XML (bien formado)
 ```bash
 xmllint --noout views/sale_report.xml
 echo $?
