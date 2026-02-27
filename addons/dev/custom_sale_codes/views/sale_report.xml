@@ -5,7 +5,7 @@
                 inherit_id="sale.report_saleorder_document">
         <!-- Insertamos dos columnas en la cabecera, justo después de descripción -->
         <xpath expr="//th[@name='th_description']" position="after">
-            <th name="th_default_code" class="text-start text-nowrap">Ref. Interna>
+            <th name="th_default_code" class="text-start text-nowrap">Ref. Interna</th>
             <th name="th_barcode" class="text-start text-nowrap">Código de barras</th>
         </xpath>
 
