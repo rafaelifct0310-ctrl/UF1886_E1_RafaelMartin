@@ -4,10 +4,10 @@
     <template id="report_saleorder_document_inherit_codes"
                 inherit_id="sale.report_saleorder_document">
         <!-- Insertamos dos columnas en la cabecera, justo después de descripción -->
-        <xpath expr="//th[@name='th_description']" position="after">
+        <xpaths expr="//th[@name='th_description']" position="after">
             <th name="th_default_code" class="text-start text-nowrap">Ref. Interna</th>
             <th name="th_barcode" class="text-start text-nowrap">Código de barras</th>
-        </xpath>
+        </xpaths>
 
         <!-- Insertamos dos celdas en cada línea normal -->
         <xpath expr="//td[@name='td_name']" position="after">
