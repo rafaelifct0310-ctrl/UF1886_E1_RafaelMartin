@@ -3,8 +3,8 @@ Transporte de componentes entre entornos DEV → QA → PROD
 
 Proyecto: UF1886_LAB  
 Módulo transportado: Personalización de formato de ventas  
-Fecha: (indicar fecha)  
-Responsable: (indicar nombre)
+Fecha: 03/03/2026  
+Responsable: Rafael
 
 ---
 
